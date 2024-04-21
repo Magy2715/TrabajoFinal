@@ -1,0 +1,11 @@
+.gabt {
+    width: 600px;
+}
+
+.video2 {
+    margin:100px  0;
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
