@@ -9,24 +9,35 @@
 </head>
 
 <body>
-    <div class="formulario">
+    <div class="formulario"> 
         <h1>Registro</h1>
-        <form action="registro.php" method="post">
+        <form  id="formulario">
             <div class="nombre">
                 <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required><br>
+                <input type="text" id="nombre" name="nombre" required 
+                id= "nombreCompleto"/><br>
+                
             </div>
             <div class="correo">
-                <label for="email">Correo :</label>
-                <input type="email" id="email" name="email" required><br>
+                <label for="email">Gmail :</label>
+                <input type="email" id="email" name="email" required  
+                id="correo"><br>
             </div>
             <div class="clave">
                 <label for="password">Contraseña:</label>
-                <input type="password" id="password" name="password" required><br>
+                <input type="password" id="password" name="password" required
+                id="contrasena"><br>
             </div>
-            <input type="submit" value="Registrarse">
+            <div class="registrarse">
+            
+            <button type="submit" class="registrarse" > Registrarte</button>
+        </div>
         </form>
     </div>
+
+
+ <script src="./scripts/registro.js"></script>
+
 </body>
 
 </html>

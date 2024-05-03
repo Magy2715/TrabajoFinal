@@ -3,6 +3,9 @@ import path from 'path';
 import dotenv from 'dotenv';
 
 import conexionMongo from './src/config/db.js';
+import usuarioRouter from './src/routes/user.routes.js';
+
+
 
 const app = express();
 const puerto = 9000;
@@ -13,8 +16,10 @@ conexionMongo()
 
 const rutapublica = path.join(process.cwd(), "Public");
 app.use(express.static(rutapublica));
-
 app.use(express.json());
+app.use("/api", usuarioRouter);
+
+
 
 app.get('/',(req,res) => {
     res.sendFile(path.join(rutapublica, 'index.html'))

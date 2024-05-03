@@ -5,31 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ingreso</title>
-    <link rel="stylesheet" href="/Public/Stylies/ingreso.css">
+    <link rel="stylesheet" href="./Stylies/ingreso.css">
 </head>
 
 <body>
     <div class="Formulario">
         <h1>Inicio de sesion</h1>
-        <form method="post">
+        <form  id="formulario">
             <div class="username">
-                <input type="text" required>
+                <input type="email"  id="correo"   required 
+                > <br>
                 <label> Usuario </label>
             </div>
             <div class="contrasena">
-                <input type="password" required>
+                <input type="password"  required
+                id="contrasena"><br>
                 <label> Contraseña </label>
             </div>
             <div class="recordad"> ¿Olvido su Contraseña? </div>
-            <input type="submit" value="iniciar">
-            <div class="Registrarse"> 
-                Quiero hacer  el <a href="#">registro</a>
-            </div>
-
+            <input onclick="iniciarSesion()" type="submit" id="recordar" value="iniciar">
+           
 
 
         </form>
     </div>
+  
+    <script src="./scripts/ingreso.js"></script>
 
 </body>
 
